@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: 'XÊ HOMEM',
   logo: '/logo.jpeg',
-  tagline: 'Vestir sem pedir atenção.',
+  tagline: 'Vista-se com estilo.',
   description:
     'Peças essenciais e streetwear premium para o homem que constrói presença através da consistência, não do exagero.',
   email: 'geral@xehomem.co.ao',

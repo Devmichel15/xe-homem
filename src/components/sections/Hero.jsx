@@ -7,7 +7,7 @@ import { useParallax } from '@/hooks/useParallax'
 import { EASE, prefersReducedMotion } from '@/lib/motion'
 import { siteConfig } from '@/data/site'
 
-const HERO_LINES = ['VESTIR', 'SEM PEDIR']
+const HERO_LINES = ['VISTA-SE', 'COM']
 
 export function Hero() {
   const ref = useRef(null)
@@ -57,7 +57,7 @@ export function Hero() {
             ))}
             <span className="block overflow-hidden pb-[0.08em]">
               <span data-hero-line className="block text-brand">
-                ATENÇÃO.
+                ESTILO.
               </span>
             </span>
           </h1>

@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Minus, Plus, ShoppingBag } from 'lucide-react'
+import { CheckCircle2, Minus, Package, Plus, ShoppingBag } from 'lucide-react'
 import {
   Dialog,
   DialogContent,
@@ -141,7 +141,34 @@ function QuickViewContent({ product }) {
                 Envio e Devoluções
               </AccordionTrigger>
               <AccordionContent className="text-sm font-light leading-relaxed text-muted-foreground">
-                Entrega em 24H em Luanda. Trocas e devoluções gratuitas até 30 dias após a compra.
+                <div className="space-y-3.5">
+                  <div>
+                    <p className="flex items-center gap-2 text-[12.5px] font-semibold tracking-[0.08em] text-foreground uppercase">
+                      <Package className="size-4 shrink-0 text-brand" aria-hidden />
+                      Informações Importantes
+                    </p>
+                    <p className="mt-2.5">
+                      Verifique o <strong className="font-semibold text-foreground">seu tamanho</strong> e a{' '}
+                      <strong className="font-semibold text-foreground">sua altura</strong> antes de finalizar o
+                      pedido.
+                    </p>
+                    <p className="mt-2">
+                      Os tamanhos e os preços estão indicados nas imagens dos produtos.
+                    </p>
+                    <p className="mt-2">
+                      Trocas ou devoluções por erro de tamanho: o cliente assume apenas a{' '}
+                      <strong className="font-semibold text-foreground">taxa de entrega</strong>.
+                    </p>
+                  </div>
+                  <ul className="space-y-1.5 border-t border-border pt-3">
+                    {['Evite devoluções', 'Escolha consciente', 'Compra sem stress'].map((item) => (
+                      <li key={item} className="flex items-center gap-2">
+                        <CheckCircle2 className="size-3.5 shrink-0 text-brand" aria-hidden />
+                        {item}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </AccordionContent>
             </AccordionItem>
           </Accordion>
