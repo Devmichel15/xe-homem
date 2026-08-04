@@ -73,7 +73,29 @@ const CATEGORIES = [
 // Cada produto tem o seu próprio preço, mesmo dentro da mesma categoria.
 // Ex.: 'tshirt1.jpeg': 6500, 'tshirt2.jpeg': 7500
 // Se um produto não estiver listado, usa o defaultPrice da categoria.
-const PRICES = {}
+const PRICES = {
+  'tshirt1.jpeg': 7000,
+  'tshirt2.jpeg': 7000,
+  'tshirt3.jpeg': 8000,
+  'tshirt4.jpeg': 7000,
+  'tshirt5.jpeg': 6000,
+  'tshirt6.jpeg': 8000,
+  'tshirt7.jpeg': 7000,
+  'sueter1.jpeg': 10000,
+  'sueter2.jpeg': 9000,
+  'sueter3.jpeg': 10000,
+  'sueter4.jpeg': 9000,
+  'relogio1.jpeg': 17500,
+  'relogio2.jpeg': 17500,
+  'regata.jpeg': 10500,
+  'necessary1.jpeg': 5000,
+  'cueca1.jpeg': 9500,
+  'cueca2.jpeg': 9500,
+  'calca1.jpeg': 10000,
+  'calca2.jpeg': 12000,
+  'calca3.jpeg': 12000,
+  'bolsa1.jpeg': 10500,
+}
 
 let id = 1
 
